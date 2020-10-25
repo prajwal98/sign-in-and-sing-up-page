@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/signIn&signUpPage/static/css/main.dd593fac.chunk.css",
+    "main.js": "/signIn&signUpPage/static/js/main.3519967b.chunk.js",
+    "main.js.map": "/signIn&signUpPage/static/js/main.3519967b.chunk.js.map",
+    "runtime-main.js": "/signIn&signUpPage/static/js/runtime-main.8ba11ce9.js",
+    "runtime-main.js.map": "/signIn&signUpPage/static/js/runtime-main.8ba11ce9.js.map",
+    "static/js/2.37d7615a.chunk.js": "/signIn&signUpPage/static/js/2.37d7615a.chunk.js",
+    "static/js/2.37d7615a.chunk.js.map": "/signIn&signUpPage/static/js/2.37d7615a.chunk.js.map",
+    "static/js/3.6d1adfa3.chunk.js": "/signIn&signUpPage/static/js/3.6d1adfa3.chunk.js",
+    "static/js/3.6d1adfa3.chunk.js.map": "/signIn&signUpPage/static/js/3.6d1adfa3.chunk.js.map",
+    "index.html": "/signIn&signUpPage/index.html",
+    "static/css/main.dd593fac.chunk.css.map": "/signIn&signUpPage/static/css/main.dd593fac.chunk.css.map",
+    "static/js/2.37d7615a.chunk.js.LICENSE.txt": "/signIn&signUpPage/static/js/2.37d7615a.chunk.js.LICENSE.txt",
+    "static/media/Login.styles.scss": "/signIn&signUpPage/static/media/nat-10.66b4c17a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ba11ce9.js",
+    "static/js/2.37d7615a.chunk.js",
+    "static/css/main.dd593fac.chunk.css",
+    "static/js/main.3519967b.chunk.js"
+  ]
+}
