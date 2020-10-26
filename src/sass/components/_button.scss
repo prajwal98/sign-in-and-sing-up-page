@@ -5,7 +5,7 @@
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 4rem;
-    display: block;
+    display: inline-block;
     border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
@@ -33,28 +33,34 @@
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
 
-  &--white {
-    background-color: $color-white;
-    color: $color-grey-dark;
+  // &--white {
+  //   background-color: $color-white;
+  //   color: $color-grey-dark;
 
-    &::after {
-      background-color: $color-white;
-    }
-  }
+  //   &::after {
+  //     background-color: $color-white;
+  //   }
+  // }
 
   &--green {
     background-color: $color-primary-light;
     color: $color-primary-dark;
+    display: inline-block;
+    margin-right: 1.5rem;
 
+    @include respond(phone) {
+      width: 46%;
+      margin-right: 1rem;
+      //padding: 1.5rem 4rem;
+    }
     &::after {
       background-color: $color-primary-light;
     }
   }
 
-
   &::after {
     content: "";
-    display: block;
+    display: inline-block;
     height: 100%;
     width: 100%;
     border-radius: 10rem;
@@ -76,7 +82,7 @@
   &:visited {
     font-size: $default-font-size;
     color: $color-primary;
-    display: block;
+    display: inline-block;
     text-decoration: none;
     border-bottom: 1px solid $color-primary;
     padding: 3px;

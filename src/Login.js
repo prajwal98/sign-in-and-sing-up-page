@@ -1,104 +1,101 @@
-import React, { Component } from 'react';
-
-import fire from './config/Fire';
-
+import React, { Component} from "react";
+import { auth } from "./config/firebase";
+//import { Link } from "@reach/router";
 import './Login.styles.scss';
 
-class Login extends Component {
-    constructor(props){
-        super(props);
-        
-        //this.signup = this.signup.bind(this);
-        
-        this.state= {
-            email:'',
-            password: ''
-        }
-        
-    }
-    handleSubmit = async event => {
-        event.preventDefault();
-    
-        const { email, password } = this.state;
-    
-        try {
-          await fire.auth().signInWithEmailAndPassword(email, password);
-          this.setState({ email: '', password: '' });
-        } catch (error) {
-          alert(error);
-        }
-      };
 
-      handleSignUp = async event => {
-        event.preventDefault();
-    
-        const { email, password } = this.state;
-    
-        try {
-          await fire.auth().createUserWithEmailAndPassword(email, password);
-          this.setState({ email: '', password: '' });
-        } catch (error) {
-          alert(error);
+class Login extends Component {
+
+    constructor(){
+        super();
+
+        this.state = {
+            email: '',
+            password:''
         }
-      };
+    }
+
+    handleSignIn = async event => {
+        event.preventDefault();
+        const { email, password } = this.state;
+
+        try {
+             await auth.signInWithEmailAndPassword(email,password);
+            this.setState({ email:'', password:''})
+        }catch (error){
+            alert(error)
+        }
+
+    }
+
+    handleSignUp = async event => {
+
+        event.preventDefault();
+
+        const { email, password } = this.state;
+
+        try {
+            await auth.createUserWithEmailAndPassword(email,password);
+            this.setState({email: '', password: ''})
+        } catch (error){
+            alert(error)
+        }
+    }
 
     handleChange = event => {
+        event.preventDefault();
+
         const { value, name } = event.target;
-    
-        this.setState({ [name]: value });
-      };
-    
+
+        this.setState({ [name]: value })
+    }
+
     render(){
         return(
             <div className='section-book'>
                 <div className='row'>
                     <div className='book'>
-                    <div className="book__form">
-                            <form className="form">
-                                <div className="u-margin-bottom-medium">
+                        <div className='book__form'>
+                            <form className='form'>
+                            <div className="u-margin-bottom-medium">
                                     <h2 className="heading-secondary">
-                                        Sign In & sign Up Page
+                                        Sign In Page Sign Up Page
                                     </h2>
                                 </div>
-
-                                <div className="form__group">
+                                <div className='form__group'>
                                     <input
                                         name='email'
                                         type='email'
                                         value={this.state.email}
                                         onChange={this.handleChange}
-                                        className='form__input'
                                         placeholder='Email'
+                                        className='form__input'
                                         required
                                     />
+                                    <label for='email' className='form__label'>Email</label>
                                 </div>
-
-                                <div className="form__group">
-                                <input
+                                <div className='form__group'>
+                                    <input
                                         name='password'
                                         type='password'
                                         value={this.state.password}
                                         onChange={this.handleChange}
+                                        placeholder='Password'
                                         className='form__input'
-                                        placeholder='password'
                                         required
                                     />
-                                    
+                                    <label for='password' className='form__label'>Password</label>
                                 </div>
-
-
                                
-
-                                <div className="form__group">
-                                    <button onClick={this.handleSubmit} className="btn btn--green">Sign In &rarr;</button>
-                                </div>
+                               
+                                    <button name='size' className='btn btn--green' onClick={this.handleSignIn}>Sign In</button>
+                            
+                              
                                 
-                                <div className="form__group">
-                                    <button onClick={this.handleSignUp} className="btn btn--green">Sign Up &rarr;</button>
-                                </div>
-                                
-                                   
-                
+                                    <button name='size' className='btn btn--green' onClick={this.handleSignUp}>Sign Up</button>
+                            
+                              
+                               
                             </form>
                         </div>
                     </div>
@@ -106,6 +103,10 @@ class Login extends Component {
             </div>
         )
     }
+
 }
+
+       
+    
 
 export default Login;

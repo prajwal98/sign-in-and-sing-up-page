@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Login from './Login';
 import Home from './Home';
-import fire from './config/Fire';
-
+import { auth } from './config/firebase';
 import './App.css';
 
 class App extends Component {
@@ -11,30 +10,26 @@ class App extends Component {
     super(props);
 
     this.state = {
-      user: null
+      user:{}
     }
   }
-
   componentDidMount(){
-
     this.authListener();
   }
 
-authListener() {
-  fire.auth().onAuthStateChanged((user) =>{
-    //console.log(user)
-    if(user){
-      this.setState({user})
-    } else {
-      this.setState({user: null})
-    }
-  })
-}
-
+  authListener(){
+    auth.onAuthStateChanged((user) => {
+      if(user) {
+        this.setState({user});
+      }else {
+        this.setState({user: null});
+      }
+    })
+  }
   render(){
     return (
       <div className="App">
-      {this.state.user ? (<Home/>) : (<Login/>)}
+        {this.state.user ? (<Home/>) : (<Login/>)}
       </div>
     );
 
@@ -42,5 +37,3 @@ authListener() {
 }
 
 export default App;
-/*
-*/
