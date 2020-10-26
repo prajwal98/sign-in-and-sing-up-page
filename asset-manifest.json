@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/sign-in-and-sing-up-page/static/css/main.9237cddc.chunk.css",
-    "main.js": "/sign-in-and-sing-up-page/static/js/main.3519967b.chunk.js",
-    "main.js.map": "/sign-in-and-sing-up-page/static/js/main.3519967b.chunk.js.map",
-    "runtime-main.js": "/sign-in-and-sing-up-page/static/js/runtime-main.7469e5f3.js",
-    "runtime-main.js.map": "/sign-in-and-sing-up-page/static/js/runtime-main.7469e5f3.js.map",
-    "static/js/2.37d7615a.chunk.js": "/sign-in-and-sing-up-page/static/js/2.37d7615a.chunk.js",
-    "static/js/2.37d7615a.chunk.js.map": "/sign-in-and-sing-up-page/static/js/2.37d7615a.chunk.js.map",
-    "static/js/3.6d1adfa3.chunk.js": "/sign-in-and-sing-up-page/static/js/3.6d1adfa3.chunk.js",
-    "static/js/3.6d1adfa3.chunk.js.map": "/sign-in-and-sing-up-page/static/js/3.6d1adfa3.chunk.js.map",
+    "main.css": "/sign-in-and-sing-up-page/static/css/main.bc0fc850.chunk.css",
+    "main.js": "/sign-in-and-sing-up-page/static/js/main.fa2c3e67.chunk.js",
+    "main.js.map": "/sign-in-and-sing-up-page/static/js/main.fa2c3e67.chunk.js.map",
+    "runtime-main.js": "/sign-in-and-sing-up-page/static/js/runtime-main.bdca6d35.js",
+    "runtime-main.js.map": "/sign-in-and-sing-up-page/static/js/runtime-main.bdca6d35.js.map",
+    "static/js/2.10481053.chunk.js": "/sign-in-and-sing-up-page/static/js/2.10481053.chunk.js",
+    "static/js/2.10481053.chunk.js.map": "/sign-in-and-sing-up-page/static/js/2.10481053.chunk.js.map",
+    "static/js/3.a98dfc19.chunk.js": "/sign-in-and-sing-up-page/static/js/3.a98dfc19.chunk.js",
+    "static/js/3.a98dfc19.chunk.js.map": "/sign-in-and-sing-up-page/static/js/3.a98dfc19.chunk.js.map",
     "index.html": "/sign-in-and-sing-up-page/index.html",
-    "static/css/main.9237cddc.chunk.css.map": "/sign-in-and-sing-up-page/static/css/main.9237cddc.chunk.css.map",
-    "static/js/2.37d7615a.chunk.js.LICENSE.txt": "/sign-in-and-sing-up-page/static/js/2.37d7615a.chunk.js.LICENSE.txt",
+    "static/css/main.bc0fc850.chunk.css.map": "/sign-in-and-sing-up-page/static/css/main.bc0fc850.chunk.css.map",
+    "static/js/2.10481053.chunk.js.LICENSE.txt": "/sign-in-and-sing-up-page/static/js/2.10481053.chunk.js.LICENSE.txt",
     "static/media/Login.styles.scss": "/sign-in-and-sing-up-page/static/media/nat-10.66b4c17a.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7469e5f3.js",
-    "static/js/2.37d7615a.chunk.js",
-    "static/css/main.9237cddc.chunk.css",
-    "static/js/main.3519967b.chunk.js"
+    "static/js/runtime-main.bdca6d35.js",
+    "static/js/2.10481053.chunk.js",
+    "static/css/main.bc0fc850.chunk.css",
+    "static/js/main.fa2c3e67.chunk.js"
   ]
 }
